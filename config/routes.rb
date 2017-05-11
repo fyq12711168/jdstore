@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   devise_for :users
   namespace :admin do
    resources :products
-   resources :carts
  end
  resources :products do
    member do
@@ -11,4 +10,9 @@ Rails.application.routes.draw do
        end
      end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :carts do  
+    collection do
+      delete :clean
+    end
+  end
 end
