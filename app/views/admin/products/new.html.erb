@@ -3,11 +3,11 @@
 <%= simple_form_for [:admin, @product] do |f| %>
 
   <div class="group">
-    <%= f.input label: "名称" %>
+    <%= f.input :title %>
   </div>
 
   <div class="group">
-    <%= f.input label: "描述" %>
+    <%= f.input :description %>
   </div>
 
   <div class="group">
