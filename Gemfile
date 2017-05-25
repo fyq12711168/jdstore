@@ -55,6 +55,7 @@ gem 'simple_form'
 gem 'aasm'
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
+gem 'figaro'
 group :production do
   gem 'pg'
 end
